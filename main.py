@@ -13,9 +13,9 @@ class DatabaseAnalyzer:
         try:
             self.connection = psycopg2.connect(
                 host="localhost",
-                database="AWS_Tickit_Database",  # замените на имя вашей БД
-                user="postgres",          # замените на ваше имя пользователя
-                password="0000",      # замените на ваш пароль
+                database="",  # замените на имя вашей БД
+                user="",          # замените на ваше имя пользователя
+                password="",      # замените на ваш пароль
                 port="5432"
             )
             print("✅ Успешно подключились к базе данных")
@@ -196,4 +196,5 @@ def main():
             analyzer.close()
 
 if __name__ == "__main__":
+
     main()
